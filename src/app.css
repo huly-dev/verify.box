@@ -1,0 +1,159 @@
+/* latin-ext */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 300;
+	font-display: fallback;
+	src: url(https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8lqxTNFOVk6OThhvAWV8.woff2)
+		format('woff2');
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 300;
+	font-display: fallback;
+	src: url(https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8lqxTOlOVk6OThhvA.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+		U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+		U+FFFD;
+}
+/* latin-ext */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 500;
+	font-display: fallback;
+	src: url(https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8-qxTNFOVk6OThhvAWV8.woff2)
+		format('woff2');
+	unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 500;
+	font-display: fallback;
+	src: url(https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8-qxTOlOVk6OThhvA.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304,
+		U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+		U+FFFD;
+}
+html {
+	font-family: 'JetBrains Mono', monospace;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+}
+:root {
+	--color-avatar-border: #8888;
+
+	--fill-vector-graphics: #ccc;
+	--stroke-vector-graphics: #333;
+	--color-background: #13151a;
+	--color-text: #ddd;
+	--color-header: white;
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--fill-vector-graphics: #444;
+		--stroke-vector-graphics: #888;
+
+		--color-background: #ddd;
+		--color-text: #333;
+		--color-header: #13151a;
+	}
+}
+html {
+	background: var(--color-background);
+	color: var(--color-text);
+}
+h1,
+h2,
+h3 {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	color: var(--color-header);
+}
+h1 {
+	font-size: 3em;
+	font-weight: 100;
+}
+h1 b {
+	font-weight: 700;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 200;
+}
+h3 {
+	font-size: 1em;
+	font-weight: 200;
+}
+svg {
+	fill: var(--color-text);
+	/* vertical-align: -0.1em; */
+}
+a {
+	color: var(--color-text);
+	white-space: nowrap;
+	text-decoration: none;
+	border-bottom: 1px dashed var(--color-text);
+}
+p {
+	font-size: 14px;
+	line-height: 24px;
+}
+.highlight {
+	transition:
+		color 2s ease 10s,
+		border-color 2s ease 10s;
+}
+.highlight:hover {
+	transition:
+		color 0.2s ease-out,
+		border-color 0.2s ease-out;
+	color: var(--color-header);
+	border-color: var(--color-header);
+}
+.sep {
+	margin: 0 5px;
+}
+.sep::before {
+	content: '•';
+}
+svg {
+	fill: var(--fill-vector-graphics);
+	stroke: var(--stroke-vector-graphics);
+}
+.person {
+	display: flex;
+	font-size: 12px;
+}
+.title {
+	white-space: nowrap;
+	font-weight: 500;
+}
+@media (max-width: 640px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h3 {
+		text-align: center;
+	}
+	p {
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
+main {
+	margin: auto;
+	padding: 1rem;
+	width: 800px;
+	max-width: calc(100% - 2rem);
+}
