@@ -26,8 +26,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@rabby-wallet/rabbykit": "^0.0.5",
-		"@wagmi/core": "^1.4.13",
-		"viem": "^1.21.4"
+		"@wagmi/connectors": "^4.3.3",
+		"@wagmi/core": "^2.9.1",
+		"@web3modal/wagmi": "^4.1.11",
+		"viem": "^2.9.31"
 	}
 }
